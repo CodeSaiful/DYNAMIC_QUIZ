@@ -1,0 +1,1607 @@
+{
+ "topics": [
+  {
+   "id": "py",
+   "name": "Python",
+   "icon": "🐍"
+  },
+  {
+   "id": "cpp",
+   "name": "C++",
+   "icon": "⚙️"
+  },
+  {
+   "id": "c",
+   "name": "C Programming",
+   "icon": "🔧"
+  },
+  {
+   "id": "org",
+   "name": "Computer Systems & Organization",
+   "icon": "🖥️"
+  },
+  {
+   "id": "html",
+   "name": "HTML",
+   "icon": "🌐"
+  },
+  {
+   "id": "css",
+   "name": "CSS",
+   "icon": "🎨"
+  },
+  {
+   "id": "js",
+   "name": "JavaScript",
+   "icon": "✨"
+  },
+  {
+   "id": "dsa",
+   "name": "Data Structures & Algorithms",
+   "icon": "🌳"
+  },
+  {
+   "id": "db",
+   "name": "Database Management (DBMS)",
+   "icon": "🗄️"
+  },
+  {
+   "id": "os",
+   "name": "Operating Systems",
+   "icon": "🧩"
+  },
+  {
+   "id": "net",
+   "name": "Computer Networks",
+   "icon": "📡"
+  },
+  {
+   "id": "se",
+   "name": "Software Engineering",
+   "icon": "📐"
+  },
+  {
+   "id": "cs",
+   "name": "General Computer Science",
+   "icon": "💡"
+  }
+ ],
+ "bank": {
+  "py": [
+   [
+    [
+     "Which keyword defines a function in Python?",
+     "def",
+     "func",
+     "function",
+     "define",
+     "def starts a function definition."
+    ],
+    [
+     "What does len([4,5,6]) return?",
+     "3",
+     "2",
+     "4",
+     "6",
+     "len counts the items."
+    ]
+   ],
+   [
+    [
+     "What is [1,2,3][-1]?",
+     "3",
+     "1",
+     "Error",
+     "2",
+     "Negative indexes count from the end."
+    ],
+    [
+     "Which type is immutable?",
+     "tuple",
+     "list",
+     "dict",
+     "set",
+     "Tuples cannot change after creation."
+    ]
+   ],
+   [
+    [
+     "a=[1]; b=a; b.append(2); print(a) outputs?",
+     "[1, 2]",
+     "[1]",
+     "[2]",
+     "Error",
+     "b and a reference the same list object."
+    ],
+    [
+     "def f(x=[]): x.append(1); return x — what does the 2nd call f() return?",
+     "[1, 1]",
+     "[1]",
+     "[]",
+     "Error",
+     "The default list is created once and reused."
+    ]
+   ]
+  ],
+  "cpp": [
+   [
+    [
+     "Which operator accesses a member through a pointer?",
+     "->",
+     ".",
+     "::",
+     "&",
+     "-> dereferences and accesses a member."
+    ],
+    [
+     "Which header provides cout?",
+     "<iostream>",
+     "<stdio.h>",
+     "<string>",
+     "<cmath>",
+     "iostream declares cin and cout."
+    ]
+   ],
+   [
+    [
+     "A reference (int&) must be...",
+     "Initialized when declared",
+     "Null",
+     "Allocated with new",
+     "Const",
+     "References bind to an object at creation."
+    ],
+    [
+     "Which keyword enables runtime polymorphism?",
+     "virtual",
+     "static",
+     "inline",
+     "friend",
+     "virtual enables dynamic dispatch."
+    ]
+   ],
+   [
+    [
+     "Memory from new[] must be freed with?",
+     "delete[]",
+     "delete",
+     "free",
+     "remove",
+     "Array allocations pair with delete[]."
+    ],
+    [
+     "Size of an empty class on most compilers?",
+     "1 byte",
+     "0 bytes",
+     "4 bytes",
+     "8 bytes",
+     "Distinct objects need distinct addresses."
+    ]
+   ]
+  ],
+  "c": [
+   [
+    [
+     "Which format specifier prints an int?",
+     "%d",
+     "%f",
+     "%c",
+     "%s",
+     "%d is for decimal integers."
+    ],
+    [
+     "Which character ends a C string?",
+     "'\\0'",
+     "'\\n'",
+     "' '",
+     "EOF",
+     "Strings are null-terminated."
+    ]
+   ],
+   [
+    [
+     "sizeof(char) always equals?",
+     "1",
+     "2",
+     "4",
+     "8",
+     "The standard defines it as 1."
+    ],
+    [
+     "arr[i] is equivalent to?",
+     "*(arr + i)",
+     "&arr + i",
+     "*arr + i",
+     "arr * i",
+     "Indexing is pointer arithmetic."
+    ]
+   ],
+   [
+    [
+     "int a=5; int *p=&a; *p=9; a is now?",
+     "9",
+     "5",
+     "Address of a",
+     "Undefined",
+     "Writing through p changes a."
+    ],
+    [
+     "malloc returns what on failure?",
+     "NULL",
+     "-1",
+     "A zeroed block",
+     "Garbage pointer",
+     "malloc returns NULL when it fails."
+    ]
+   ]
+  ],
+  "org": [
+   [
+    [
+     "Which CPU part does arithmetic?",
+     "ALU",
+     "Cache",
+     "Bus",
+     "Register file",
+     "The ALU does arithmetic and logic."
+    ],
+    [
+     "How many bits are in a byte?",
+     "8",
+     "4",
+     "16",
+     "10",
+     "A byte is 8 bits."
+    ]
+   ],
+   [
+    [
+     "Which memory is fastest?",
+     "Registers",
+     "RAM",
+     "SSD",
+     "HDD",
+     "Registers sit inside the CPU."
+    ],
+    [
+     "The program counter holds?",
+     "Address of the next instruction",
+     "Last result",
+     "Stack size",
+     "Cache hits",
+     "PC points to the next instruction."
+    ]
+   ],
+   [
+    [
+     "A pipeline stall waiting for an earlier result is a?",
+     "Data hazard",
+     "Structural hazard",
+     "Control hazard",
+     "Cache hazard",
+     "That is a data (RAW) hazard."
+    ],
+    [
+     "8-bit two's complement of 5 negated (-5)?",
+     "11111011",
+     "11111010",
+     "10000101",
+     "00000101",
+     "Invert 00000101 and add 1."
+    ]
+   ]
+  ],
+  "html": [
+   [
+    [
+     "Which tag creates a hyperlink?",
+     "<a>",
+     "<link>",
+     "<href>",
+     "<url>",
+     "<a href> makes links."
+    ],
+    [
+     "Largest heading tag?",
+     "<h1>",
+     "<h6>",
+     "<head>",
+     "<title>",
+     "h1 is the top-level heading."
+    ]
+   ],
+   [
+    [
+     "Which attribute gives image alt text?",
+     "alt",
+     "title",
+     "src",
+     "caption",
+     "alt describes images for accessibility."
+    ],
+    [
+     "Semantic element for navigation links?",
+     "<nav>",
+     "<div>",
+     "<span>",
+     "<section>",
+     "nav marks navigation."
+    ]
+   ],
+   [
+    [
+     "Which script attribute runs after parsing without blocking?",
+     "defer",
+     "block",
+     "sync",
+     "lazy",
+     "defer waits until HTML is parsed."
+    ],
+    [
+     "Which input type shows a date picker?",
+     "date",
+     "calendar",
+     "day",
+     "datetime-text",
+     "type=date renders a date control."
+    ]
+   ]
+  ],
+  "css": [
+   [
+    [
+     "Which property sets text color?",
+     "color",
+     "font-color",
+     "text-style",
+     "fill",
+     "color sets text color."
+    ],
+    [
+     "Unit relative to the root font size?",
+     "rem",
+     "px",
+     "pt",
+     "cm",
+     "rem uses the root element size."
+    ]
+   ],
+   [
+    [
+     "Which display value makes a flex container?",
+     "flex",
+     "block-flex",
+     "inline",
+     "table-cell",
+     "display:flex enables flexbox."
+    ],
+    [
+     "Which property controls stacking order?",
+     "z-index",
+     "layer",
+     "stack",
+     "order-z",
+     "z-index sets stacking."
+    ]
+   ],
+   [
+    [
+     "Highest specificity?",
+     "#id",
+     ".class",
+     "element",
+     "*",
+     "IDs outrank classes and elements."
+    ],
+    [
+     "With border-box, width includes?",
+     "Padding and border",
+     "Content only",
+     "Margin",
+     "Outline",
+     "border-box counts padding and border."
+    ]
+   ]
+  ],
+  "js": [
+   [
+    [
+     "Which keyword declares a block-scoped variable?",
+     "let",
+     "var",
+     "define",
+     "dim",
+     "let is block-scoped."
+    ],
+    [
+     "typeof null returns?",
+     "object",
+     "null",
+     "undefined",
+     "number",
+     "A long-standing language quirk."
+    ]
+   ],
+   [
+    [
+     "What is [] + [] ?",
+     "Empty string",
+     "0",
+     "[]",
+     "undefined",
+     "Arrays become empty strings and concatenate."
+    ],
+    [
+     "=== checks?",
+     "Value and type",
+     "Value only",
+     "Type only",
+     "Reference only",
+     "Strict equality avoids coercion."
+    ]
+   ],
+   [
+    [
+     "0.1 + 0.2 === 0.3 evaluates to?",
+     "false",
+     "true",
+     "NaN",
+     "Error",
+     "The sum is 0.30000000000000004."
+    ],
+    [
+     "Which runs first: setTimeout(f,0) or Promise.then?",
+     "Promise.then",
+     "setTimeout",
+     "Same time",
+     "Depends on f",
+     "Microtasks run before timer callbacks."
+    ]
+   ]
+  ],
+  "dsa": [
+   [
+    [
+     "Which structure is LIFO?",
+     "Stack",
+     "Queue",
+     "Heap",
+     "Array",
+     "Last in, first out."
+    ],
+    [
+     "Array access by index costs?",
+     "O(1)",
+     "O(n)",
+     "O(log n)",
+     "O(n²)",
+     "Indexing is constant time."
+    ]
+   ],
+   [
+    [
+     "Binary search requires data to be?",
+     "Sorted",
+     "Unique",
+     "Linked",
+     "Hashed",
+     "It halves a sorted range each step."
+    ],
+    [
+     "Which traversal uses a queue?",
+     "BFS",
+     "DFS",
+     "Inorder",
+     "Preorder",
+     "BFS explores level by level."
+    ]
+   ],
+   [
+    [
+     "Average time of quicksort?",
+     "O(n log n)",
+     "O(n)",
+     "O(n²)",
+     "O(log n)",
+     "Balanced partitions give n log n."
+    ],
+    [
+     "Shortest paths with non-negative weights?",
+     "Dijkstra",
+     "Kruskal",
+     "Prim",
+     "Topological sort",
+     "Dijkstra needs non-negative weights."
+    ]
+   ]
+  ],
+  "db": [
+   [
+    [
+     "Which SQL command retrieves data?",
+     "SELECT",
+     "INSERT",
+     "UPDATE",
+     "DROP",
+     "SELECT queries rows."
+    ],
+    [
+     "What uniquely identifies a row?",
+     "Primary key",
+     "Foreign key",
+     "View",
+     "Trigger",
+     "A primary key is unique per row."
+    ]
+   ],
+   [
+    [
+     "Which join keeps only matching rows?",
+     "INNER JOIN",
+     "LEFT JOIN",
+     "FULL JOIN",
+     "CROSS JOIN",
+     "INNER JOIN keeps matches only."
+    ],
+    [
+     "'A' in ACID stands for?",
+     "Atomicity",
+     "Availability",
+     "Accuracy",
+     "Authority",
+     "Transactions are all-or-nothing."
+    ]
+   ],
+   [
+    [
+     "Which normal form removes partial dependencies?",
+     "2NF",
+     "1NF",
+     "3NF only",
+     "4NF",
+     "2NF removes partial dependence on a composite key."
+    ],
+    [
+     "Reading uncommitted data is called?",
+     "Dirty read",
+     "Phantom read",
+     "Lost index",
+     "Deadlock",
+     "A dirty read sees uncommitted changes."
+    ]
+   ]
+  ],
+  "os": [
+   [
+    [
+     "What manages hardware and software resources?",
+     "Operating system",
+     "Compiler",
+     "Browser",
+     "Editor",
+     "The OS manages resources."
+    ],
+    [
+     "A running program is a?",
+     "Process",
+     "File",
+     "Driver",
+     "Macro",
+     "A process is a program in execution."
+    ]
+   ],
+   [
+    [
+     "Which scheduling is non-preemptive?",
+     "FCFS",
+     "Round Robin",
+     "SRTF",
+     "Multilevel feedback",
+     "FCFS runs each job to completion."
+    ],
+    [
+     "Virtual memory extends RAM using?",
+     "Paging to disk",
+     "CPU cache",
+     "Registers",
+     "BIOS",
+     "Pages swap between RAM and disk."
+    ]
+   ],
+   [
+    [
+     "Which is NOT a deadlock condition?",
+     "Preemption",
+     "Mutual exclusion",
+     "Hold and wait",
+     "Circular wait",
+     "Deadlock requires no preemption."
+    ],
+    [
+     "Belady's anomaly affects which policy?",
+     "FIFO",
+     "LRU",
+     "Optimal",
+     "Clock",
+     "FIFO can fault more with more frames."
+    ]
+   ]
+  ],
+  "net": [
+   [
+    [
+     "Which protocol loads web pages?",
+     "HTTP",
+     "FTP",
+     "SMTP",
+     "SSH",
+     "HTTP transfers web content."
+    ],
+    [
+     "IP stands for?",
+     "Internet Protocol",
+     "Internal Port",
+     "Input Packet",
+     "Index Pointer",
+     "IP addresses and routes packets."
+    ]
+   ],
+   [
+    [
+     "Which OSI layer handles routing?",
+     "Network",
+     "Transport",
+     "Data link",
+     "Session",
+     "The network layer routes packets."
+    ],
+    [
+     "Which protocol resolves domain names?",
+     "DNS",
+     "DHCP",
+     "ARP",
+     "ICMP",
+     "DNS maps names to IPs."
+    ]
+   ],
+   [
+    [
+     "TCP connection setup uses?",
+     "Three-way handshake",
+     "Two-way ping",
+     "Token passing",
+     "Broadcast",
+     "SYN, SYN-ACK, ACK."
+    ],
+    [
+     "Usable hosts in a /24 IPv4 subnet?",
+     "254",
+     "256",
+     "255",
+     "252",
+     "256 minus network and broadcast."
+    ]
+   ]
+  ],
+  "se": [
+   [
+    [
+     "SDLC stands for?",
+     "Software Development Life Cycle",
+     "System Data Link Control",
+     "Software Design Logic Code",
+     "Secure Dev Lifecycle Check",
+     "SDLC describes development phases."
+    ],
+    [
+     "Which tool tracks code versions?",
+     "Git",
+     "Excel",
+     "Figma",
+     "Notepad",
+     "Git is a version control system."
+    ]
+   ],
+   [
+    [
+     "Which model is iterative and customer-focused?",
+     "Agile",
+     "Waterfall",
+     "Big bang",
+     "V-model",
+     "Agile delivers in iterations."
+    ],
+    [
+     "Testing individual functions is?",
+     "Unit testing",
+     "System testing",
+     "Acceptance testing",
+     "Load testing",
+     "Unit tests cover small units."
+    ]
+   ],
+   [
+    [
+     "A class should have one reason to change: which principle?",
+     "Single Responsibility",
+     "Open/Closed",
+     "Liskov",
+     "Dependency Inversion",
+     "That is SRP from SOLID."
+    ],
+    [
+     "Low coupling with high cohesion indicates?",
+     "Good modular design",
+     "Poor design",
+     "A monolith",
+     "Slow code",
+     "Modules stay focused and independent."
+    ]
+   ]
+  ],
+  "cs": [
+   [
+    [
+     "Binary 1010 equals what in decimal?",
+     "10",
+     "8",
+     "12",
+     "14",
+     "8 + 2 = 10."
+    ],
+    [
+     "CPU stands for?",
+     "Central Processing Unit",
+     "Computer Personal Unit",
+     "Central Program Utility",
+     "Core Process Unit",
+     "The CPU executes instructions."
+    ]
+   ],
+   [
+    [
+     "Which gate outputs 1 only if both inputs are 1?",
+     "AND",
+     "OR",
+     "XOR",
+     "NOT",
+     "AND needs both inputs high."
+    ],
+    [
+     "Which property must every algorithm have?",
+     "Finiteness",
+     "Randomness",
+     "Redundancy",
+     "Recursion",
+     "Algorithms must terminate."
+    ]
+   ],
+   [
+    [
+     "Which problem is undecidable?",
+     "Halting problem",
+     "Sorting",
+     "Shortest path",
+     "Primality test",
+     "No algorithm solves it for all programs."
+    ],
+    [
+     "Hexadecimal FF equals?",
+     "255",
+     "256",
+     "15",
+     "127",
+     "15×16 + 15 = 255."
+    ]
+   ]
+  ]
+ },
+ "facts": {
+  "py": [
+   [
+    "print()",
+    "Outputs text to the screen"
+   ],
+   [
+    "len()",
+    "Returns the number of items in an object"
+   ],
+   [
+    "input()",
+    "Reads text typed by the user"
+   ],
+   [
+    "list",
+    "Ordered, mutable collection in square brackets"
+   ],
+   [
+    "if",
+    "Runs code only when a condition is true"
+   ],
+   [
+    "dict",
+    "Stores key-value pairs"
+   ],
+   [
+    "lambda",
+    "Creates a small anonymous function"
+   ],
+   [
+    "range()",
+    "Generates a sequence of numbers for loops"
+   ],
+   [
+    "try/except",
+    "Handles runtime errors gracefully"
+   ],
+   [
+    "import",
+    "Loads a module into the program"
+   ],
+   [
+    "generator",
+    "Function that yields values lazily with yield"
+   ],
+   [
+    "decorator",
+    "Wraps a function to extend its behavior"
+   ],
+   [
+    "__init__",
+    "Constructor method called when an object is created"
+   ],
+   [
+    "list comprehension",
+    "Compact way to build a list from an iterable"
+   ],
+   [
+    "GIL",
+    "Lock letting one thread run Python bytecode at a time"
+   ]
+  ],
+  "cpp": [
+   [
+    "cout",
+    "Standard output stream"
+   ],
+   [
+    "cin",
+    "Standard input stream"
+   ],
+   [
+    "int",
+    "Whole-number data type"
+   ],
+   [
+    "for",
+    "Loop with initialization, condition and update"
+   ],
+   [
+    "namespace std",
+    "Scope containing the standard library"
+   ],
+   [
+    "class",
+    "User-defined type bundling data and functions"
+   ],
+   [
+    "constructor",
+    "Special function that initializes an object"
+   ],
+   [
+    "vector",
+    "Resizable dynamic array container"
+   ],
+   [
+    "pointer",
+    "Variable that stores a memory address"
+   ],
+   [
+    "inheritance",
+    "Lets a class reuse another class's members"
+   ],
+   [
+    "template",
+    "Writes generic code that works for many types"
+   ],
+   [
+    "smart pointer",
+    "Automatically frees owned memory (RAII)"
+   ],
+   [
+    "virtual function",
+    "Resolved at runtime through the vtable"
+   ],
+   [
+    "move semantics",
+    "Transfers resources instead of copying them"
+   ],
+   [
+    "iterator",
+    "Object that traverses a container's elements"
+   ]
+  ],
+  "c": [
+   [
+    "printf",
+    "Prints formatted output"
+   ],
+   [
+    "scanf",
+    "Reads formatted input"
+   ],
+   [
+    "main",
+    "Entry point of a C program"
+   ],
+   [
+    "#include",
+    "Preprocessor directive that adds a header"
+   ],
+   [
+    "int",
+    "Integer data type"
+   ],
+   [
+    "struct",
+    "Groups different variables under one name"
+   ],
+   [
+    "array",
+    "Fixed-size sequence of same-type elements"
+   ],
+   [
+    "strlen",
+    "Returns the length of a string"
+   ],
+   [
+    "sizeof",
+    "Operator giving the size of a type in bytes"
+   ],
+   [
+    "pointer",
+    "Variable holding a memory address"
+   ],
+   [
+    "malloc",
+    "Allocates memory on the heap"
+   ],
+   [
+    "free",
+    "Releases heap memory"
+   ],
+   [
+    "dangling pointer",
+    "Points to memory that was already freed"
+   ],
+   [
+    "volatile",
+    "Tells the compiler a value may change unexpectedly"
+   ],
+   [
+    "function pointer",
+    "Stores the address of a function"
+   ]
+  ],
+  "org": [
+   [
+    "CPU",
+    "Executes program instructions"
+   ],
+   [
+    "RAM",
+    "Volatile main memory"
+   ],
+   [
+    "ALU",
+    "Performs arithmetic and logic operations"
+   ],
+   [
+    "bit",
+    "Smallest unit of data, 0 or 1"
+   ],
+   [
+    "register",
+    "Tiny storage location inside the CPU"
+   ],
+   [
+    "cache",
+    "Small fast memory between CPU and RAM"
+   ],
+   [
+    "bus",
+    "Shared pathway for moving data"
+   ],
+   [
+    "opcode",
+    "Part of an instruction naming the operation"
+   ],
+   [
+    "clock speed",
+    "Cycles per second a CPU runs at"
+   ],
+   [
+    "ROM",
+    "Non-volatile memory holding firmware"
+   ],
+   [
+    "pipelining",
+    "Overlaps stages of multiple instructions"
+   ],
+   [
+    "RISC",
+    "Architecture with simple fixed-length instructions"
+   ],
+   [
+    "cache miss",
+    "Requested data is not found in the cache"
+   ],
+   [
+    "DMA",
+    "Lets devices access memory without the CPU"
+   ],
+   [
+    "interrupt",
+    "Signal that pauses the CPU for urgent work"
+   ]
+  ],
+  "html": [
+   [
+    "<p>",
+    "Defines a paragraph"
+   ],
+   [
+    "<img>",
+    "Embeds an image"
+   ],
+   [
+    "<ul>",
+    "Creates an unordered bullet list"
+   ],
+   [
+    "<br>",
+    "Inserts a line break"
+   ],
+   [
+    "<title>",
+    "Sets the page title shown in the browser tab"
+   ],
+   [
+    "<form>",
+    "Collects user input to submit"
+   ],
+   [
+    "<table>",
+    "Displays data in rows and columns"
+   ],
+   [
+    "<header>",
+    "Semantic container for introductory content"
+   ],
+   [
+    "<iframe>",
+    "Embeds another page inside the page"
+   ],
+   [
+    "<label>",
+    "Describes a form control"
+   ],
+   [
+    "<canvas>",
+    "Draws graphics with JavaScript"
+   ],
+   [
+    "meta viewport",
+    "Controls layout scaling on mobile devices"
+   ],
+   [
+    "aria-label",
+    "Gives an accessible name to assistive tech"
+   ],
+   [
+    "<picture>",
+    "Serves different images by condition"
+   ],
+   [
+    "data-* attribute",
+    "Stores custom data on an element"
+   ]
+  ],
+  "css": [
+   [
+    "margin",
+    "Space outside an element's border"
+   ],
+   [
+    "padding",
+    "Space between content and border"
+   ],
+   [
+    "background-color",
+    "Sets an element's background fill"
+   ],
+   [
+    "font-size",
+    "Controls the size of text"
+   ],
+   [
+    "border",
+    "Draws a line around an element"
+   ],
+   [
+    "flexbox",
+    "One-dimensional layout model"
+   ],
+   [
+    "grid",
+    "Two-dimensional layout with rows and columns"
+   ],
+   [
+    "position: absolute",
+    "Places element relative to nearest positioned ancestor"
+   ],
+   [
+    ":hover",
+    "Selects an element under the mouse pointer"
+   ],
+   [
+    "@media",
+    "Applies styles conditionally, such as by screen width"
+   ],
+   [
+    "specificity",
+    "Decides which conflicting rule wins"
+   ],
+   [
+    "var()",
+    "Reads a CSS custom property"
+   ],
+   [
+    "transition",
+    "Animates property changes smoothly"
+   ],
+   [
+    "::before",
+    "Pseudo-element inserted before content"
+   ],
+   [
+    "calc()",
+    "Computes a value from a math expression"
+   ]
+  ],
+  "js": [
+   [
+    "console.log()",
+    "Prints output to the console"
+   ],
+   [
+    "const",
+    "Declares a variable that cannot be reassigned"
+   ],
+   [
+    "array",
+    "Ordered list of values"
+   ],
+   [
+    "function",
+    "Reusable block of code"
+   ],
+   [
+    "alert()",
+    "Shows a popup message to the user"
+   ],
+   [
+    "addEventListener",
+    "Attaches a handler to a DOM event"
+   ],
+   [
+    "JSON.parse()",
+    "Converts a JSON string into an object"
+   ],
+   [
+    "map()",
+    "Returns a new array by transforming each item"
+   ],
+   [
+    "fetch()",
+    "Makes network requests and returns a Promise"
+   ],
+   [
+    "DOM",
+    "Tree representation of the page's elements"
+   ],
+   [
+    "closure",
+    "Function that remembers its outer scope variables"
+   ],
+   [
+    "async/await",
+    "Syntax for writing Promise code like sync code"
+   ],
+   [
+    "event loop",
+    "Schedules callbacks and microtasks"
+   ],
+   [
+    "prototype",
+    "Object that other objects inherit properties from"
+   ],
+   [
+    "hoisting",
+    "Declarations are moved to the top of their scope"
+   ]
+  ],
+  "dsa": [
+   [
+    "stack",
+    "Last-in, first-out structure"
+   ],
+   [
+    "queue",
+    "First-in, first-out structure"
+   ],
+   [
+    "array",
+    "Contiguous elements accessed by index"
+   ],
+   [
+    "linked list",
+    "Nodes connected by pointers"
+   ],
+   [
+    "recursion",
+    "A function calling itself"
+   ],
+   [
+    "hash table",
+    "Key lookup in average O(1) time"
+   ],
+   [
+    "binary tree",
+    "Each node has at most two children"
+   ],
+   [
+    "BFS",
+    "Visits nodes level by level"
+   ],
+   [
+    "merge sort",
+    "Stable O(n log n) divide-and-conquer sort"
+   ],
+   [
+    "heap",
+    "Tree giving fast access to the min or max"
+   ],
+   [
+    "dynamic programming",
+    "Stores subproblem results to avoid recomputation"
+   ],
+   [
+    "AVL tree",
+    "Self-balancing binary search tree"
+   ],
+   [
+    "Dijkstra",
+    "Shortest paths with non-negative weights"
+   ],
+   [
+    "topological sort",
+    "Orders a DAG's nodes by dependencies"
+   ],
+   [
+    "trie",
+    "Prefix tree for storing strings"
+   ]
+  ],
+  "db": [
+   [
+    "SELECT",
+    "Retrieves rows from a table"
+   ],
+   [
+    "primary key",
+    "Uniquely identifies each row"
+   ],
+   [
+    "table",
+    "Stores data in rows and columns"
+   ],
+   [
+    "INSERT",
+    "Adds new rows"
+   ],
+   [
+    "DELETE",
+    "Removes rows from a table"
+   ],
+   [
+    "JOIN",
+    "Combines rows from two or more tables"
+   ],
+   [
+    "foreign key",
+    "Links a column to another table's key"
+   ],
+   [
+    "GROUP BY",
+    "Groups rows for aggregate functions"
+   ],
+   [
+    "index",
+    "Speeds up data lookups"
+   ],
+   [
+    "normalization",
+    "Reduces redundancy by organizing tables"
+   ],
+   [
+    "transaction",
+    "Group of operations that succeed or fail together"
+   ],
+   [
+    "ACID",
+    "Atomicity, Consistency, Isolation, Durability"
+   ],
+   [
+    "deadlock",
+    "Transactions wait on each other forever"
+   ],
+   [
+    "B+ tree",
+    "Balanced tree commonly used for database indexes"
+   ],
+   [
+    "view",
+    "Virtual table defined by a query"
+   ]
+  ],
+  "os": [
+   [
+    "kernel",
+    "Core of the operating system"
+   ],
+   [
+    "process",
+    "Program in execution"
+   ],
+   [
+    "file system",
+    "Organizes how data is stored on disk"
+   ],
+   [
+    "shell",
+    "Interface for typing commands"
+   ],
+   [
+    "driver",
+    "Software that controls a hardware device"
+   ],
+   [
+    "thread",
+    "Lightweight unit of execution inside a process"
+   ],
+   [
+    "scheduler",
+    "Chooses which process runs next"
+   ],
+   [
+    "paging",
+    "Divides memory into fixed-size blocks"
+   ],
+   [
+    "semaphore",
+    "Counter used to synchronize processes"
+   ],
+   [
+    "context switch",
+    "Saving one process's state to run another"
+   ],
+   [
+    "deadlock",
+    "Processes blocked waiting for each other's resources"
+   ],
+   [
+    "thrashing",
+    "Excessive paging that slows the system"
+   ],
+   [
+    "race condition",
+    "Outcome depends on timing of concurrent access"
+   ],
+   [
+    "mutex",
+    "Lock allowing one thread into a critical section"
+   ],
+   [
+    "TLB",
+    "Cache of recent page table translations"
+   ]
+  ],
+  "net": [
+   [
+    "IP address",
+    "Unique identifier for a device on a network"
+   ],
+   [
+    "router",
+    "Forwards packets between networks"
+   ],
+   [
+    "HTTP",
+    "Protocol for transferring web pages"
+   ],
+   [
+    "Wi-Fi",
+    "Wireless local networking technology"
+   ],
+   [
+    "LAN",
+    "Network covering a small area like a home"
+   ],
+   [
+    "DNS",
+    "Translates domain names to IP addresses"
+   ],
+   [
+    "TCP",
+    "Reliable connection-oriented transport protocol"
+   ],
+   [
+    "UDP",
+    "Fast connectionless protocol without guarantees"
+   ],
+   [
+    "DHCP",
+    "Automatically assigns IP addresses"
+   ],
+   [
+    "HTTPS",
+    "HTTP secured with TLS encryption"
+   ],
+   [
+    "subnet mask",
+    "Splits an IP address into network and host parts"
+   ],
+   [
+    "NAT",
+    "Translates private addresses to a public one"
+   ],
+   [
+    "ARP",
+    "Maps IP addresses to MAC addresses"
+   ],
+   [
+    "BGP",
+    "Routing protocol between internet autonomous systems"
+   ],
+   [
+    "TLS handshake",
+    "Negotiates encryption keys for a secure session"
+   ]
+  ],
+  "se": [
+   [
+    "SDLC",
+    "Phases of building software from plan to maintenance"
+   ],
+   [
+    "bug",
+    "Defect in software"
+   ],
+   [
+    "Git",
+    "Tracks changes to source code"
+   ],
+   [
+    "requirement",
+    "Statement of what the system must do"
+   ],
+   [
+    "testing",
+    "Checking software behaves as expected"
+   ],
+   [
+    "Agile",
+    "Iterative development with frequent feedback"
+   ],
+   [
+    "Waterfall",
+    "Sequential phase-by-phase development model"
+   ],
+   [
+    "UML",
+    "Standard notation for modeling software"
+   ],
+   [
+    "code review",
+    "Peers inspect code before merging"
+   ],
+   [
+    "sprint",
+    "Short fixed-length development iteration in Scrum"
+   ],
+   [
+    "CI/CD",
+    "Automates building, testing and deploying code"
+   ],
+   [
+    "refactoring",
+    "Improving code structure without changing behavior"
+   ],
+   [
+    "technical debt",
+    "Cost of quick fixes that need rework later"
+   ],
+   [
+    "microservices",
+    "App built from small independently deployable services"
+   ],
+   [
+    "design pattern",
+    "Reusable solution to a common design problem"
+   ]
+  ],
+  "cs": [
+   [
+    "algorithm",
+    "Step-by-step procedure for solving a problem"
+   ],
+   [
+    "binary",
+    "Base-2 number system"
+   ],
+   [
+    "compiler",
+    "Translates source code to machine code"
+   ],
+   [
+    "variable",
+    "Named storage for a value"
+   ],
+   [
+    "database",
+    "Organized collection of data"
+   ],
+   [
+    "Big-O",
+    "Describes how running time grows with input size"
+   ],
+   [
+    "operating system",
+    "Manages hardware and software resources"
+   ],
+   [
+    "encryption",
+    "Scrambles data so only authorized parties can read it"
+   ],
+   [
+    "cloud computing",
+    "Using remote servers over the internet"
+   ],
+   [
+    "API",
+    "Interface letting programs talk to each other"
+   ],
+   [
+    "Turing machine",
+    "Abstract model of general computation"
+   ],
+   [
+    "NP-complete",
+    "Hardest problems in NP"
+   ],
+   [
+    "machine learning",
+    "Algorithms that learn patterns from data"
+   ],
+   [
+    "hash function",
+    "Maps data to a fixed-size value"
+   ],
+   [
+    "virtualization",
+    "Running multiple virtual machines on one host"
+   ]
+  ]
+ }
+}
